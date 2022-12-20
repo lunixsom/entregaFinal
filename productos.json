@@ -1,0 +1,24 @@
+[
+	{
+		"nombre\n": "Producto B",
+		"precio": "354636",
+		"stock": "1231",
+		"marca": "Marca A",
+		"categoria": "Categoria A",
+		"detalles": "Detalle A",
+		"foto": "fotoA.jpg",
+		"envio": "true",
+		"id": "1"
+	},
+	{
+		"nombre": "Producto X",
+		"precio": "10",
+		"stock": "1",
+		"marca": "Marca X",
+		"categoria": "Categoria X",
+		"detalles": "Detalle X",
+		"foto": "fotoX.jpg",
+		"envio": "true",
+		"id": "11"
+	}
+]

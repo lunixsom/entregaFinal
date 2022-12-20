@@ -1,0 +1,17 @@
+.text{
+    font-size: larger;
+    margin: 2em auto;
+    width: 50em; 
+    
+    &__strong{
+        font-weight: bold;
+    }
+
+    &__conMarco{
+        width:50em;
+        padding: 1em 1.5em;
+        border-radius: 6px;
+        outline: solid 2px green;
+    }
+}
+

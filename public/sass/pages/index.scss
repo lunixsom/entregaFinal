@@ -1,0 +1,30 @@
+.section-cards {
+    background-color: #f1f2f3;
+    /* padding: 1em; */
+}
+
+.section-cards__header{
+    background-image: url('/img/productos/samsung-galaxy-s21-plus-5g_escalado.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    background-color: black;
+    margin-bottom: 2em;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.cards-container {
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em; // es el espacio de separacion entre elementos, en este caso de cards
+    justify-content: center;
+
+    @media (min-width: 1200px){
+        & {
+            gap: 2em; // es el espacio de separacion entre elementos
+        }
+    }
+}

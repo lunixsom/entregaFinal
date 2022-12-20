@@ -1,0 +1,33 @@
+#contact {
+    outline: solid grey 1px;
+    background-color: white;
+    margin: 4em auto 3em;
+    border-radius: 0.25rem;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70em;
+  }
+
+  #contact>input, #contact>textarea, #contact>label{
+    margin-bottom: 2em;
+  }
+
+  #contact>input, #contact>textarea{
+    width: 50%;
+  }
+
+  #contact>input{
+    height: 40px;
+  }
+
+  .btn{
+   background-color: blue;
+   color: white; 
+   padding: 1em 1.5em;
+   border-radius: 2px;
+  }

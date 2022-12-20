@@ -1,0 +1,36 @@
+.section-cards {
+  background-color: #f1f2f3;
+  /* padding: 1em; */
+}
+
+.section-cards__header {
+  background-image: url("/img/productos/samsung-galaxy-s21-plus-5g_escalado.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  background-color: black;
+  margin-bottom: 2em;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.cards-container {
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 1200px) {
+  .cards-container {
+    gap: 2em;
+  }
+}
+/*# sourceMappingURL=index.css.map */

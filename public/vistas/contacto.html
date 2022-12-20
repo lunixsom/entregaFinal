@@ -1,0 +1,47 @@
+   
+<div class="contenedor-img" id="contacto-img">
+    <div class="contenedor-img__titulo">Contactanos</div>
+</div>
+    
+    <form id="contact" action="" method="POST">
+        <label for="contactName">Ingrese su Nombre Completo</label>
+        <input  
+            id="contactName" 
+            name="contactName" 
+            type="text"
+            maxlength="50" 
+            pattern="[a-z A-Z]{3,50}" 
+            placeholder="Nombre (*): Emanuel Some" 
+            required/>
+
+        <label for="contactEmail">Ingrese su Correo Electronico</label>
+        <input  
+            id="contactEmail" 
+            name="contactEmail" 
+            type="email"
+            minlength="8"
+            placeholder="Correo(*): emanuelsome@hotmail.com"  
+            required/>
+        
+        <label for="contactPhone">Ingrese su Numero de Telefono</label>
+        <input 
+            id="contactPhone" 
+            name="contactPhone" 
+            type="tel"
+            pattern="[0-9]{6.20} || [\()]\d{2,6}[\)]\d{3,6}[\-]\d{3,6}" 
+            placeholder="Telefono(*): (5411)3557-4888" 
+            required/>
+       
+        <label for="contactConsult">"Ingrese su Consulta"</label>
+        <textarea 
+            name="contactConsult" 
+            id="contactConsult" 
+            minlength="10" 
+            maxlength="200" 
+            placeholder="Consulta (*): Buenos dias, necesito un presupuesto"
+            cols="25"  
+            rows="10"  
+            required></textarea>
+        <button class="btn">Enviar</button>
+    </form>
+    

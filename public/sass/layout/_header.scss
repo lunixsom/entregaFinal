@@ -1,0 +1,183 @@
+/******************************************
+                    HEADER
+******************************************/
+
+.main-header {
+    display: flex;
+    flex-direction: column-reverse;
+    position:sticky;
+    top: 0;
+
+    @media (max-width:768px){
+        &{
+            flex-direction: column-reverse;
+        }
+    }
+}
+
+#menu{
+    display: none;
+
+    &:checked + .nav-bar{
+        display: block;
+    }
+
+    &:checked ~ .search-bar .menu-toggle__label{
+        background-color: yellow;
+    }
+}
+
+/******************************************
+                    NAV BAR
+******************************************/
+
+.nav-bar{
+    background-color: mediumaquamarine;
+
+
+    &__nav-list{
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+
+        @media (max-width: 768px){
+            & {
+                flex-direction: column;
+            }
+        }
+    }
+
+    &__nav-item {
+        background-color: pink;
+    }
+    &__nav-link {
+        display: block;
+        background-color: black;
+        color: #fff;
+        padding: .3em 2.5em 1em;
+        text-decoration: none;
+        /* height: 20px; */
+    }
+
+    &__nav-link:hover{
+        color: black;
+        background-color: lightblue;
+        font-weight: bold;
+    }
+
+    @media (max-width: 768px){
+        &{
+            display: block;
+        }
+    }
+}
+
+/******************************************
+                    SEARCH BAR
+******************************************/
+
+.search-bar {
+    background-color: red;
+
+
+    &__form-container{
+        padding: 1.8em;
+    }
+
+    &__logo-container{
+        background-image: url('/img/LOGO-removebg-preview.png');
+        background-size:contain;
+        background-position: center;
+        position: absolute;
+        padding:3.5em;
+    }
+
+    &__form-container{
+        display: flex;
+        background-color:black;
+        flex-basis: 100%;
+        justify-content: center;
+        padding: 1.5em 1.5em 1em;
+    }
+
+    &__form-label{
+        display: none;
+    }
+
+    &__form-search{
+        background-color: whitesmoke;
+        width: 40%;
+        border-radius: 5px;
+        height: 3em;
+    }
+
+    &__form-submit{
+        background-image: url("data:image/svg+xml,%3csvg class='w-6 h-6' fill='white' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z' clip-rule='evenodd'%3e%3c/path%3e%3c/svg%3e");  
+        background-position: center;
+        background-repeat:round;
+        background-color: black;
+        color: transparent;
+        height: 35px;
+        cursor: pointer;
+    }
+
+    &__carrito-container{
+        background-image: url("data:image/svg+xml,%3csvg class='w-6 h-6' fill='white' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z'%3e%3c/path%3e%3c/svg%3e");
+        position: absolute;
+        right: 3em;
+        top: 2.5em;
+        flex: 0 0 3em;
+        padding: 1em;
+        cursor: pointer;
+    }
+}
+
+/******************************************
+                MENU TOGGLE
+******************************************/
+
+.menu-toggle {
+    display: none;
+    background-color: red;
+    flex: 0 0 3em;
+    position: relative;
+    cursor: pointer;
+
+    &__label {
+        display: block;
+        background-color: black;
+        height: 100%;
+    }
+
+    &__top-bread,
+    &__meat,
+    &__bottom-bread {
+        display: block;
+        background-color: #333;
+        height: .2em;
+        position: absolute;
+        left: .5em;
+        right: .5em;
+    }
+
+    &__top-bread{
+        top: .8em;
+    }
+
+    &__meat{
+        top: 50%;
+        margin-top: -.1em;
+    }
+
+    &__bottom-bread{
+        bottom: .8em;
+    }
+
+    @media (max-width:768px){
+        & {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+{{#if productos.length}}
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Precio</th>
+    <th>Stock</th>
+    <th>Marca</th>
+    <th>Categoria</th>
+    <th>Detalles</th>
+    <th>Foto</th>
+    <th>Envio</th>
+  </tr>
+  {{#each productos}}
+  <tr>
+    <td>{{nombre}}</td>
+    <td>{{precio}}</td>
+    <td>{{stock}}</td>
+    <td>{{marca}}</td>
+    <td>{{categoria}}</td>
+    <td>{{detalles}}</td>
+    <td>
+        <img src="{{foto}}" alt="{{nombre}}" style="display:block; margin: 0 auto;" width="50">
+    </td>
+    {{#if envio}}
+        <td>Si</td>
+    {{else}}
+        <td>No</td>
+    {{/if}} 
+    <td>
+      {{#if ../validos}} {{!-- TODO: Revisar porque no funciona boton --}}
+        <button onclick="productoController.actualizarProducto('{{_id}}')">Actualizar</button>
+      {{else}}
+        <button disabled onclick="productoController.actualizarProducto('{{_id}}')">Actualizar</button> {{!-- TODO: refactor - Delegacion de Eventos  --}}
+      {{/if}}    
+    </td>  
+    <td>
+      <button onclick="productoController.borrarProducto('{{_id}}')">Borrar</button>
+    </td> 
+  </tr>
+  {{/each}}
+</table>
+{{/if}}
