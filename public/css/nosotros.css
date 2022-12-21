@@ -1,0 +1,23 @@
+#nosotros-img {
+  background-image: url(../../img/productos/nosotros_escalado_1.jpg);
+  background-position: center -150px;
+}
+
+.contenedor-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2em 3em;
+  margin: 3em auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  outline: solid 1px grey;
+  width: 70em;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=nosotros.css.map */

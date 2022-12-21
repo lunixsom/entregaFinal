@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAA;EACT,gBAAgB,EAAE,gDAAgD;EAClE,mBAAmB,EAAE,aAAa;CACrC;;AACD,AAAA,gBAAgB,CAAA;EACZ,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,OAAO,EAAE,OAAO;EAChB,MAAM,EAAE,QAAQ;EAChB,eAAe,EAAE,MAAM;EACvB,OAAO,EAAE,cAAc;EACvB,KAAK,EAAE,IAAI;EACX,aAAa,EAAE,IAAI;CACtB",
+    "sources": [
+        "../sass/pages/nosotros.scss"
+    ],
+    "names": [],
+    "file": "nosotros.css"
+}
