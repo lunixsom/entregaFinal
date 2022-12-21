@@ -28,12 +28,12 @@
                     <td>No</td>
                 {{/if}}    
                 <td>
-                    <button onclick="carritoController.borrarProductoCarrito('{{id}}')">borrar</button>
+                    <button class="button" onclick="carritoController.borrarProductoCarrito('{{id}}')">borrar</button>
                 </td>  
             </tr>
         {{/each}} 
     </table>
- <button class="btn__enviarCarrito" onclick="carritoController.enviarCarrito()">Enviar</button>
+ <button class="button" onclick="carritoController.enviarCarrito()">Enviar</button>
 {{else}}
     <h2>El carrito esta vacio</h2>
 {{/if}} 

@@ -13,8 +13,19 @@
         display: block;
     }
 
-    &--tabla tr{
-        display: flex;
-        justify-content: space-between;
+    td,th,table {
+        border: 0.5px solid blue;
+        border-collapse: collapse;
+        padding: 5px;
+        text-align: center;
+    }
+
+    table {
+        width: 80%;
+        height: min-content;
+        margin-top: 2%;  
+        margin-bottom: 2%;  
+        margin-right: 5%;  
+        margin-left: 5%;  
     }
 }
