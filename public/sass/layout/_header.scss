@@ -22,9 +22,9 @@
         display: block;
     }
 
-    &:checked ~ .search-bar .menu-toggle__label{
+/*     &:checked ~ .search-bar .menu-toggle__label{
         background-color: yellow;
-    }
+    } */
 }
 
 /******************************************
@@ -32,14 +32,14 @@
 ******************************************/
 
 .nav-bar{
-    background-color: mediumaquamarine;
+    //background-color: mediumaquamarine;
 
 
     &__nav-list{
         display: flex;
         list-style-type: none;
         justify-content: center;
-        align-items: center;
+        
         background-color: black;
 
         @media (max-width: 768px){
@@ -63,7 +63,7 @@
 
     &__nav-link:hover{
         color: black;
-        background-color: lightblue;
+        background-color: rgb(250, 250, 63);
         font-weight: bold;
     }
 
@@ -80,6 +80,8 @@
 
 .search-bar {
     background-color: red;
+    display: flex;
+    justify-content:space-around 
 
 
     &__form-container{
@@ -100,6 +102,12 @@
         flex-basis: 100%;
         justify-content: center;
         padding: 1.5em 1.5em 1em;
+
+        @media (max-width: 768px){
+            &{
+                padding: 1em 1.5em 3em;
+            }
+        }
     }
 
     &__form-label{
@@ -111,6 +119,14 @@
         width: 40%;
         border-radius: 5px;
         height: 3em;
+
+        @media (max-width:768px){
+            & {
+                width: 50%;
+                margin-top: 1em;
+                margin-left: 3.6em;
+            }
+        }
     }
 
     &__form-submit{
@@ -121,6 +137,12 @@
         color: transparent;
         height: 35px;
         cursor: pointer;
+
+        @media (max-width:768px){
+            & {
+                display:none;
+            }
+        }
     }
 
     &__carrito-container{
@@ -131,6 +153,13 @@
         flex: 0 0 3em;
         padding: 1em;
         cursor: pointer;
+
+        @media (max-width:768px){
+            & {
+                right: 5.3em;
+                top: 2em; 
+            }
+        }
     }
 }
 
@@ -140,8 +169,8 @@
 
 .menu-toggle {
     display: none;
-    background-color: red;
-    flex: 0 0 3em;
+    /* background-color: red; */
+    flex: 0 0 4em;
     position: relative;
     cursor: pointer;
 
@@ -151,33 +180,36 @@
         height: 100%;
     }
 
-    &__top-bread,
-    &__meat,
-    &__bottom-bread {
-        display: block;
-        background-color: #333;
-        height: .2em;
-        position: absolute;
-        left: .5em;
-        right: .5em;
-    }
-
-    &__top-bread{
-        top: .8em;
-    }
-
-    &__meat{
-        top: 50%;
-        margin-top: -.1em;
-    }
-
-    &__bottom-bread{
-        bottom: .8em;
-    }
-
     @media (max-width:768px){
         & {
             display: block;
+
+            &__top-bread,
+            &__meat,
+            &__bottom-bread {
+            
+                background-color: whitesmoke;
+                height: .3em;
+                position: absolute;
+                left: -.3em;
+                right: 1em;
+            }
+        
+            &__top-bread{
+                top: 1.4em;
+            }
+        
+            &__meat{
+                top: 50%;
+                margin-top: -1.5em;
+                height: 25%;
+            }
+        
+            &__bottom-bread{
+                bottom: 2.6em;
+            }
         }
     }
 }
+
+
