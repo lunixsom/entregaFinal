@@ -1,14 +1,57 @@
 #nosotros-img{
     background-image: url(../../img/productos/nosotros_escalado_1.jpg);
     background-position: center -150px;
+
+    @media (max-width: 768px){
+       &{       
+            background-position: center;
+        }
+    }
 }
 .contenedor-text{
     display: flex;
     flex-direction: column;
     padding: 2em 3em;
-    margin: 3em auto;   
+    margin: 2.5em auto;   
     justify-content: center;
     outline: solid 1px grey;
     width: 70em;
     border-radius: 10px;
+    
+    @media (max-width: 768px){
+        &{
+            outline: none;
+            width: auto;
+         }
+    }
+
+    &__info{
+        width: 50em;
+     
+        @media (max-width: 768px){
+            &{
+                outline: none;
+                width: auto;
+             }
+        }
+     }
+
+    &__infoImportant{
+        width:50em;
+        padding: 1em 1.5em;
+        border-radius: 6px;
+        outline: solid 2px green;
+
+        @media (max-width: 768px){
+            &{
+                outline: none;
+                background-color: black;
+                color: yellow;
+                font-weight: bold;
+                width:16em;
+             }
+        }    
+
+    } 
+
 }

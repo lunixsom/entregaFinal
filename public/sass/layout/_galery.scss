@@ -1,7 +1,6 @@
 .contenedor-img{
     display: flex;
     height: 20em;
-    background-color: yellow;
     align-items: center;
     justify-content: center;
     background-size: cover;
@@ -9,6 +8,6 @@
 
     &__titulo{
         font-size: xx-large;
-        font-weight: bolder;
+        font-weight:bolder;
     }
 }

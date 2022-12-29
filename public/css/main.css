@@ -257,7 +257,6 @@ justify-content:space-around
   display: -ms-flexbox;
   display: flex;
   height: 20em;
-  background-color: yellow;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -325,6 +324,12 @@ justify-content:space-around
   background-position: center -150px;
 }
 
+@media (max-width: 768px) {
+  #nosotros-img {
+    background-position: center;
+  }
+}
+
 .contenedor-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -334,13 +339,48 @@ justify-content:space-around
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 2em 3em;
-  margin: 3em auto;
+  margin: 2.5em auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   outline: solid 1px grey;
   width: 70em;
   border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .contenedor-text {
+    outline: none;
+    width: auto;
+  }
+}
+
+.contenedor-text__info {
+  width: 50em;
+}
+
+@media (max-width: 768px) {
+  .contenedor-text__info {
+    outline: none;
+    width: auto;
+  }
+}
+
+.contenedor-text__infoImportant {
+  width: 50em;
+  padding: 1em 1.5em;
+  border-radius: 6px;
+  outline: solid 2px green;
+}
+
+@media (max-width: 768px) {
+  .contenedor-text__infoImportant {
+    outline: none;
+    background-color: black;
+    color: yellow;
+    font-weight: bold;
+    width: 16em;
+  }
 }
 
 .card {
@@ -509,18 +549,10 @@ justify-content:space-around
 .text {
   font-size: larger;
   margin: 2em auto;
-  width: 50em;
 }
 
 .text__strong {
   font-weight: bold;
-}
-
-.text__conMarco {
-  width: 50em;
-  padding: 1em 1.5em;
-  border-radius: 6px;
-  outline: solid 2px green;
 }
 
 .container-alta {
