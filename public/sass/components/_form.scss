@@ -11,6 +11,13 @@
     align-items: center;
     flex-wrap: wrap;
     width: 70em;
+
+    @media (max-width: 768px){
+      &{
+        outline: none;
+        width: auto;
+      }
+    }
   }
 
   #contact>input, #contact>textarea, #contact>label{
@@ -19,6 +26,12 @@
 
   #contact>input, #contact>textarea{
     width: 50%;
+
+    @media (max-width: 768px){
+      &{
+        width: 90%;
+      }
+    }
   }
 
   #contact>input{

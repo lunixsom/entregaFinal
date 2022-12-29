@@ -314,6 +314,12 @@ justify-content:space-around
   background-position: center -200px;
 }
 
+@media (max-width: 768px) {
+  #contacto-img {
+    background-position: center;
+  }
+}
+
 #nosotros-img {
   background-image: url(../../img/productos/nosotros_escalado_1.jpg);
   background-position: center -150px;
@@ -468,12 +474,25 @@ justify-content:space-around
   width: 70em;
 }
 
+@media (max-width: 768px) {
+  #contact {
+    outline: none;
+    width: auto;
+  }
+}
+
 #contact > input, #contact > textarea, #contact > label {
   margin-bottom: 2em;
 }
 
 #contact > input, #contact > textarea {
   width: 50%;
+}
+
+@media (max-width: 768px) {
+  #contact > input, #contact > textarea {
+    width: 90%;
+  }
 }
 
 #contact > input {

@@ -1,4 +1,16 @@
 #contacto-img{
     background-image: url(../../img/productos/contactanos.jpg);
     background-position: center -200px;
+
+    @media (max-width: 768px){
+        &{
+            
+            background-position: center;
+        }
+    }
 }
+
+
+
+
+
