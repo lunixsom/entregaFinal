@@ -1,13 +1,17 @@
 .container-alta{
-    padding: 10px;
+    //padding: 10px;
 
     h1, h2{
         color: blue;
+        text-align: center;
     }
 
+    label{
+        display: inline-block;
+    }
     div, input {
         width: 300px;
-        display: block;
+        /* display: block; */
         margin-bottom: 1px;
         padding: 5px;
     }
@@ -28,8 +32,6 @@
             background-color: red;
         }
     }
-
-
 
     input[type="checkbox"]{
         display: inline;
@@ -58,6 +60,37 @@
 
     #listado-productos{
         width: 100%;
+
+        @media (max-width: 768px){
+        
+            th {
+                font-size: 10px;
+                padding: 1px;
+            }
+
+            td {
+                padding: 0px;
+                font-size: 9px;
+                text-align: center;
+
+            }
+
+            td button {
+                width:fit-content;
+                font-size: 6px;
+                padding: 1px;
+                margin: 1px;
+                margin-bottom: 3px;
+                margin-top: 3px;
+                
+            }
+
+            table {
+                width:fit-content;
+                margin: 0.5px;
+                margin-bottom: 15px;
+            }
+        }
     }
 
     /* DROP AREA */
@@ -92,6 +125,6 @@
 
     #drop-area.highlight {
         border-color: purple;
-    }
+    } 
 }
 

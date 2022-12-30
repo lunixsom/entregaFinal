@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,AAAA,CACD,OAAO,CAAE,MAAM,CACf,KAAK,CAAE,GAAG,CACb",
+    "sources": [
+        "../sass/pages/alta.scss"
+    ],
+    "names": [],
+    "file": "alta.min.css"
+}

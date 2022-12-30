@@ -511,7 +511,7 @@ justify-content:space-around
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 70em;
+  width: 50em;
 }
 
 @media (max-width: 768px) {
@@ -556,17 +556,21 @@ justify-content:space-around
 }
 
 .container-alta {
-  padding: 10px;
   /* DROP AREA */
 }
 
 .container-alta h1, .container-alta h2 {
   color: blue;
+  text-align: center;
+}
+
+.container-alta label {
+  display: inline-block;
 }
 
 .container-alta div, .container-alta input {
   width: 300px;
-  display: block;
+  /* display: block; */
   margin-bottom: 1px;
   padding: 5px;
 }
@@ -616,6 +620,35 @@ justify-content:space-around
 
 .container-alta #listado-productos {
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .container-alta #listado-productos th {
+    font-size: 10px;
+    padding: 1px;
+  }
+  .container-alta #listado-productos td {
+    padding: 0px;
+    font-size: 9px;
+    text-align: center;
+  }
+  .container-alta #listado-productos td button {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 6px;
+    padding: 1px;
+    margin: 1px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+  }
+  .container-alta #listado-productos table {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0.5px;
+    margin-bottom: 15px;
+  }
 }
 
 .container-alta #drop-area {
