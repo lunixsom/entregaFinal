@@ -1,19 +1,27 @@
 .container-alta{
-    //padding: 10px;
+    padding: 10px;
+
+    form #datos {
+        display: grid;
+        grid-template-columns: 5em 4em;
+    }
 
     h1, h2{
         color: blue;
         text-align: center;
+        margin-bottom: 1em;
     }
 
-    label{
-        display: inline-block;
-    }
-    div, input {
+    div, input{
         width: 300px;
-        /* display: block; */
         margin-bottom: 1px;
         padding: 5px;
+    }
+
+    input[type="text"]{
+        display: inline-block;
+        margin-bottom: 2em;
+        width: 250px;
     }
 
     .button{
@@ -35,9 +43,9 @@
 
     input[type="checkbox"]{
         display: inline;
-        width: 15px;
+        width: 12px;
         height: 15px;
-        margin-top: 10px;
+        //margin-top: 10px;
     }
 
     form .mensaje-validacion {
@@ -55,29 +63,28 @@
     }
 
     table{
-        width: 90%;
+        width: auto;
     }
 
     #listado-productos{
-        width: 100%;
+        width: auto;
 
         @media (max-width: 768px){
-        
+            
             th {
-                font-size: 10px;
+                font-size: .5rem;
                 padding: 1px;
             }
 
             td {
-                padding: 0px;
-                font-size: 9px;
+                font-size: .5rem;
                 text-align: center;
 
             }
 
             td button {
                 width:fit-content;
-                font-size: 6px;
+                font-size: .2rem;
                 padding: 1px;
                 margin: 1px;
                 margin-bottom: 3px;
@@ -125,6 +132,7 @@
 
     #drop-area.highlight {
         border-color: purple;
-    } 
+    }
 }
+
 

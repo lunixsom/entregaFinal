@@ -556,23 +556,33 @@ justify-content:space-around
 }
 
 .container-alta {
+  padding: 10px;
   /* DROP AREA */
+}
+
+.container-alta form #datos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5em 4em;
+      grid-template-columns: 5em 4em;
 }
 
 .container-alta h1, .container-alta h2 {
   color: blue;
   text-align: center;
-}
-
-.container-alta label {
-  display: inline-block;
+  margin-bottom: 1em;
 }
 
 .container-alta div, .container-alta input {
   width: 300px;
-  /* display: block; */
   margin-bottom: 1px;
   padding: 5px;
+}
+
+.container-alta input[type="text"] {
+  display: inline-block;
+  margin-bottom: 2em;
+  width: 250px;
 }
 
 .container-alta .button {
@@ -595,9 +605,8 @@ justify-content:space-around
 
 .container-alta input[type="checkbox"] {
   display: inline;
-  width: 15px;
+  width: 12px;
   height: 15px;
-  margin-top: 10px;
 }
 
 .container-alta form .mensaje-validacion {
@@ -615,28 +624,27 @@ justify-content:space-around
 }
 
 .container-alta table {
-  width: 90%;
+  width: auto;
 }
 
 .container-alta #listado-productos {
-  width: 100%;
+  width: auto;
 }
 
 @media (max-width: 768px) {
   .container-alta #listado-productos th {
-    font-size: 10px;
+    font-size: .5rem;
     padding: 1px;
   }
   .container-alta #listado-productos td {
-    padding: 0px;
-    font-size: 9px;
+    font-size: .5rem;
     text-align: center;
   }
   .container-alta #listado-productos td button {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    font-size: 6px;
+    font-size: .2rem;
     padding: 1px;
     margin: 1px;
     margin-bottom: 3px;
