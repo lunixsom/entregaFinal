@@ -560,23 +560,38 @@ justify-content:space-around
   /* DROP AREA */
 }
 
-.container-alta form #datos {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 5em 4em;
-      grid-template-columns: 5em 4em;
+.container-alta form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em 50%;
 }
 
 .container-alta h1, .container-alta h2 {
   color: blue;
   text-align: center;
-  margin-bottom: 1em;
+  margin-top: 1em;
 }
 
 .container-alta div, .container-alta input {
   width: 300px;
   margin-bottom: 1px;
   padding: 5px;
+}
+
+.container-alta #datos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5em 4em;
+      grid-template-columns: 5em 4em;
+  padding: 1em 50%;
 }
 
 .container-alta input[type="text"] {
@@ -618,13 +633,13 @@ justify-content:space-around
   display: none;
 }
 
+.container-alta table {
+  width: 100%;
+}
+
 .container-alta table, .container-alta th, .container-alta td {
   border: 1px solid black;
   border-collapse: collapse;
-}
-
-.container-alta table {
-  width: auto;
 }
 
 .container-alta #listado-productos {
