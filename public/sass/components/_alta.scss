@@ -34,19 +34,48 @@
     }
 
     .button{
+        z-index: -1;
         display: block;
-        margin-top: 20px;
-        width: 80px;
-        background-color: blue;
+        margin: 1em auto;
+        padding: 1em 2em;
+        background-color:  dodgerblue;
         color: whitesmoke;
         cursor: pointer;
         margin-bottom: 10px;
+        border-radius: 5px;
+        border-radius: 1px solid #ccc;
+       
+/*         &:hover{
+            background-color: green;    
+        } */
         
-        &:hover{
-            background-color: green;
+        &--dropArea{
+            display: inline-block;
+            padding: 10px;
+            background: #ccc;
+            cursor: pointer;
         }
+
+        &--update{
+
+            background-image: url(../../img/icons/edit.svg);
+        }
+        
+        &--borrar{
+            background-color: rgba(255, 0, 0, 0.82);
+            background-image: url(../../img/icons/trash.svg);
+        }
+
+/*         &--borrar:hover{
+            background-color: rgb(241, 113, 113);
+        } */
+
+        &:hover{
+            filter: opacity(60%);
+        }
+
         &:disabled {
-            background-color: red;
+            filter: opacity(30%);
         }
     }
 
@@ -86,28 +115,40 @@
             }
 
             td {
-                font-size: .5rem;
+                overflow: hidden;
+                font-size: .7rem;
                 text-align: center;
-
+                text-overflow: ellipsis;
             }
 
             td button {
                 width:fit-content;
-                font-size: .2rem;
+                font-size: 2rem;
                 padding: 1px;
                 margin: 1px;
                 margin-bottom: 3px;
                 margin-top: 3px;
                 
+                
             }
 
             table {
-                width:fit-content;
+                overflow: hidden;
+                table-layout: fixed;
+                border-collapse: collapse;
                 margin: 0.5px;
                 margin-bottom: 15px;
+                width: 100%;
             }
         }
     }
+
+    .btn{
+        padding: 1.5em 1.5em;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
 
     /* DROP AREA */
 
@@ -119,14 +160,7 @@
         padding: 20px;
     }
 
-    .button{
-        display: inline-block;
-        padding: 10px;
-        background: #ccc;
-        cursor: pointer;
-        border-radius: 5px;
-        border-radius: 1px solid #ccc;
-    }
+
 
     #foto{
         display: none;

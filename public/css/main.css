@@ -601,21 +601,48 @@ justify-content:space-around
 }
 
 .container-alta .button {
+  z-index: -1;
   display: block;
-  margin-top: 20px;
-  width: 80px;
-  background-color: blue;
+  margin: 1em auto;
+  padding: 1em 2em;
+  background-color: dodgerblue;
   color: whitesmoke;
   cursor: pointer;
   margin-bottom: 10px;
+  border-radius: 5px;
+  border-radius: 1px solid #ccc;
+  /*         &:hover{
+            background-color: green;    
+        } */
+  /*         &--borrar:hover{
+            background-color: rgb(241, 113, 113);
+        } */
+}
+
+.container-alta .button--dropArea {
+  display: inline-block;
+  padding: 10px;
+  background: #ccc;
+  cursor: pointer;
+}
+
+.container-alta .button--update {
+  background-image: url(../../img/icons/edit.svg);
+}
+
+.container-alta .button--borrar {
+  background-color: rgba(255, 0, 0, 0.82);
+  background-image: url(../../img/icons/trash.svg);
 }
 
 .container-alta .button:hover {
-  background-color: green;
+  -webkit-filter: opacity(60%);
+          filter: opacity(60%);
 }
 
 .container-alta .button:disabled {
-  background-color: red;
+  -webkit-filter: opacity(30%);
+          filter: opacity(30%);
 }
 
 .container-alta input[type="checkbox"] {
@@ -652,26 +679,35 @@ justify-content:space-around
     padding: 1px;
   }
   .container-alta #listado-productos td {
-    font-size: .5rem;
+    overflow: hidden;
+    font-size: .7rem;
     text-align: center;
+    text-overflow: ellipsis;
   }
   .container-alta #listado-productos td button {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    font-size: .2rem;
+    font-size: 2rem;
     padding: 1px;
     margin: 1px;
     margin-bottom: 3px;
     margin-top: 3px;
   }
   .container-alta #listado-productos table {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    overflow: hidden;
+    table-layout: fixed;
+    border-collapse: collapse;
     margin: 0.5px;
     margin-bottom: 15px;
+    width: 100%;
   }
+}
+
+.container-alta .btn {
+  padding: 1.5em 1.5em;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .container-alta #drop-area {
@@ -680,15 +716,6 @@ justify-content:space-around
   width: 300px;
   margin: 25px 0;
   padding: 20px;
-}
-
-.container-alta .button {
-  display: inline-block;
-  padding: 10px;
-  background: #ccc;
-  cursor: pointer;
-  border-radius: 5px;
-  border-radius: 1px solid #ccc;
 }
 
 .container-alta #foto {
@@ -870,12 +897,12 @@ justify-content:space-around
     display: none;
     position: fixed;
     text-align: center;
-    background-color: #f1f2f3;
+    background-color: #F0FFFF;
     z-index: 1;
-    top: 119px;
+    top: 118px;
     left: 0px;
     right: 0px;
-    bottom: 0px;
+    bottom: 0vh;
   }
   .section-carrito--visible {
     display: block;
@@ -883,7 +910,6 @@ justify-content:space-around
   }
   .section-carrito td, .section-carrito th, .section-carrito table {
     border: none;
-    border-collapse: collapse;
     padding: 1em 0;
     text-align: center;
     font-size: 13px;
@@ -896,6 +922,9 @@ justify-content:space-around
     margin-bottom: 2em;
     margin-right: .1em;
     margin-left: .4em;
+  }
+  .section-carrito button {
+    padding: .4em .2em;
   }
 }
 /*# sourceMappingURL=main.css.map */
