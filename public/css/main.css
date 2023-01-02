@@ -841,8 +841,6 @@ justify-content:space-around
   left: 300px;
   right: 300px;
   bottom: 150px;
-  -webkit-box-shadow: 0.3em 0.3em 10em 0.3em black;
-          box-shadow: 0.3em 0.3em 10em 0.3em black;
 }
 
 .section-carrito--visible {
@@ -865,5 +863,39 @@ justify-content:space-around
   margin-bottom: 2%;
   margin-right: 5%;
   margin-left: 5%;
+}
+
+@media (max-width: 768px) {
+  .section-carrito {
+    display: none;
+    position: fixed;
+    text-align: center;
+    background-color: #f1f2f3;
+    z-index: 1;
+    top: 119px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+  }
+  .section-carrito--visible {
+    display: block;
+    width: auto;
+  }
+  .section-carrito td, .section-carrito th, .section-carrito table {
+    border: none;
+    border-collapse: collapse;
+    padding: 1em 0;
+    text-align: center;
+    font-size: 13px;
+  }
+  .section-carrito table {
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    margin-right: .1em;
+    margin-left: .4em;
+  }
 }
 /*# sourceMappingURL=main.css.map */
