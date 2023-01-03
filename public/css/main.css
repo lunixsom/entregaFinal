@@ -11,6 +11,7 @@
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: rgba(100, 97, 97, 0.701);
 }
 
 body {
@@ -252,6 +253,54 @@ justify-content:space-around
   }
 }
 
+footer {
+  border-top: 0.2em solid #4b4b4b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  height: 5em;
+  background-color: #525252;
+  margin-top: 3em;
+}
+
+.redSocial {
+  margin: 1em .2em;
+  height: 3em;
+  width: 2.8em;
+  background-color: #525252;
+}
+
+#face {
+  background-image: url(../../img/icons/face.svg);
+}
+
+#face:hover {
+  background-image: url(../../img/icons/face-hover.svg);
+}
+
+#insta {
+  background-image: url(../../img/icons/insta.svg);
+}
+
+#insta:hover {
+  background-image: url(../../img/icons/insta-hover.svg);
+}
+
+#git {
+  background-image: url(../../img/icons/git.svg);
+}
+
+#git:hover {
+  background-image: url(../../img/icons/git-hover.svg);
+}
+
 .contenedor-img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -270,11 +319,6 @@ justify-content:space-around
 .contenedor-img__titulo {
   font-size: xx-large;
   font-weight: bolder;
-}
-
-.section-cards {
-  background-color: #f1f2f3;
-  /* padding: 1em; */
 }
 
 .section-cards__header {
@@ -424,16 +468,14 @@ justify-content:space-around
 }
 
 .card:hover, .card:focus {
-  border: 0.1em solid #99ff00;
-  -webkit-box-shadow: 0 1px 5px #99ff00, 0 0 3px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 1px 5px #99ff00, 0 0 3px rgba(0, 0, 0, 0.4);
+  border: 0.1em solid #80d600;
+  -webkit-box-shadow: 0 1px 5px #99ff00, 0 0 3px #99ff00;
+          box-shadow: 0 1px 5px #99ff00, 0 0 3px #99ff00;
   padding: .5em;
   -webkit-transform: scale(1.03) skew();
   transform: scale(1.03) skew();
   -webkit-transform-origin: bottom;
   transform-origin: bottom;
-  -webkit-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.05), 0 3 3px rgba(0, 0, 0, 0.01);
-          box-shadow: 0 7px 8px rgba(0, 0, 0, 0.05), 0 3 3px rgba(0, 0, 0, 0.01);
 }
 
 .card__image-container {
@@ -446,8 +488,8 @@ justify-content:space-around
 
 .card:hover .card__image-container,
 .card:focus .card__image-container {
-  border-radius: .2em;
-  border: .2em solid #ffb75f;
+  border-radius: .3em;
+  border: 0.2em solid #785aff;
   /*         -webkit-clip-path: polygon(0 0, 100% 0, 100% 190px, 0 200px);
         clip-path: polygon(0 0, 100% 0, 100% 190px, 0 200px); */
 }

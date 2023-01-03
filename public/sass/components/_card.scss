@@ -14,8 +14,8 @@
     
     &:hover,
     &:focus {
-        border: .1em solid rgb(66, 104, 8);
-        box-shadow: 0 1px 5px rgb(153, 255, 0, .9), 0 0 3px rgb(153, 255, 0, .8);
+        border: .1em solid rgb(128, 214, 0);
+        box-shadow: 0 1px 5px rgba(153, 255, 0, 1), 0 0 3px rgba(153, 255, 0, 1);
         padding: .5em;
         -moz-transform: scale(1.03) skew();
         -webkit-transform: scale(1.03) skew();
@@ -23,7 +23,6 @@
         -moz-transform-origin: bottom;
         -webkit-transform-origin: bottom;
         transform-origin: bottom;
-        /* box-shadow: 0 7px 8px rgba(0,0,0, .05), 0 3 3px rgba(0,0,0, .01); */
     }
 
 /*     &:nth-child(5n + 1){
@@ -52,8 +51,8 @@
 
     &:hover &__image-container,
     &:focus &__image-container {
-        border-radius: 4em;
-        border: .4em solid rgb(250, 199, 102);
+        border-radius: .3em;
+        border: .2em solid rgb(120, 90, 255);
 /*         -webkit-clip-path: polygon(0 0, 100% 0, 100% 190px, 0 200px);
         clip-path: polygon(0 0, 100% 0, 100% 190px, 0 200px); */
     }

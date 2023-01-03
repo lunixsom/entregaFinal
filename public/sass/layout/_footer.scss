@@ -1,0 +1,40 @@
+footer{
+    border-top: .2em solid rgb(75, 75, 75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 5em;
+    background-color: rgb(82, 82, 82);
+    margin-top: 3em;
+}
+
+.redSocial{
+    margin:1em .2em;
+    height: 3em;
+    width: 2.8em;
+    background-color: rgb(82, 82, 82);
+}
+
+#face{
+    background-image: url(../../img/icons/face.svg);
+
+    &:hover{
+        background-image: url(../../img/icons/face-hover.svg);
+
+    }
+}
+#insta{
+    background-image: url(../../img/icons/insta.svg);
+
+    &:hover{
+        background-image: url(../../img/icons/insta-hover.svg);
+    }
+}
+#git{
+    background-image: url(../../img/icons/git.svg);
+
+    &:hover{
+        background-image: url(../../img/icons/git-hover.svg);
+    }
+}
