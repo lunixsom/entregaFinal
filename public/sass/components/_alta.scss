@@ -30,7 +30,7 @@
     input[type="text"]{
         display: inline-block;
         margin-bottom: 2em;
-        width: 250px;
+        width: 16em;
     }
 
     .button{
@@ -41,11 +41,8 @@
         background-color:  dodgerblue;
         color: whitesmoke;
         cursor: pointer;
-        border-radius: 1px solid;
-       
-/*         &:hover{
-            background-color: green;    
-        } */
+        border: .1em solid #ccc;
+        border-radius: 7%;
         
         &--dropArea{
             display: inline-block;
@@ -102,6 +99,12 @@
         
     }
 
+    .btn{
+        padding: 1.5em 1.5em;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
 /* BREAKPOINT 768 - BEGIN */
     
     #listado-productos{
@@ -125,7 +128,8 @@
 
             td button {
                             width:fit-content;
-                            font-size: .9em;  
+                            font-size: .9em;
+                            padding: 1.2em;  
                         } 
 
 
@@ -139,18 +143,17 @@
             }
 
             table, td{
-                border: .7em solid white;
+                border: none;
             }
+
+            .btn{
+                height: 4em;
+                border-radius: 25%;
+                }
         }
     }
 
 /* BREAKPOINT 768 - END*/
-
-    .btn{
-        padding: 1.5em 1.5em;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
 
 
     /* DROP AREA */

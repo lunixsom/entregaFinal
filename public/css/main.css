@@ -599,7 +599,7 @@ justify-content:space-around
 .container-alta input[type="text"] {
   display: inline-block;
   margin-bottom: 2em;
-  width: 250px;
+  width: 16em;
 }
 
 .container-alta .button {
@@ -610,10 +610,8 @@ justify-content:space-around
   background-color: dodgerblue;
   color: whitesmoke;
   cursor: pointer;
-  border-radius: 1px solid;
-  /*         &:hover{
-            background-color: green;    
-        } */
+  border: .1em solid #ccc;
+  border-radius: 7%;
   /*         &--borrar:hover{
             background-color: rgb(241, 113, 113);
         } */
@@ -669,6 +667,12 @@ justify-content:space-around
   border-collapse: collapse;
 }
 
+.container-alta .btn {
+  padding: 1.5em 1.5em;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .container-alta #listado-productos {
   width: auto;
 }
@@ -690,6 +694,7 @@ justify-content:space-around
     width: -moz-fit-content;
     width: fit-content;
     font-size: .9em;
+    padding: 1.2em;
   }
   .container-alta #listado-productos table {
     overflow: hidden;
@@ -700,14 +705,12 @@ justify-content:space-around
     width: 100%;
   }
   .container-alta #listado-productos table, .container-alta #listado-productos td {
-    border: .7em solid white;
+    border: none;
   }
-}
-
-.container-alta .btn {
-  padding: 1.5em 1.5em;
-  background-repeat: no-repeat;
-  background-position: center;
+  .container-alta #listado-productos .btn {
+    height: 4em;
+    border-radius: 25%;
+  }
 }
 
 .container-alta #drop-area {
