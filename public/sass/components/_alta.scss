@@ -42,7 +42,7 @@
         color: whitesmoke;
         cursor: pointer;
         border: .1em solid #ccc;
-        border-radius: 7%;
+        border-radius: 9%;
         
         &--dropArea{
             display: inline-block;
@@ -52,7 +52,6 @@
         }
 
         &--update{
-
             background-image: url(../../img/icons/edit.svg);
         }
         
@@ -74,7 +73,6 @@
         display: inline;
         width: 12px;
         height: 15px;
-        //margin-top: 10px;
     }
 
     form .mensaje-validacion {
@@ -90,8 +88,9 @@
         width:100%;
     }
     table, th, td{
-        border:  1px solid black;
+        border:  none;
         border-collapse: collapse;
+        text-align: justify;
         
     }
 

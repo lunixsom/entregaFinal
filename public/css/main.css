@@ -611,7 +611,7 @@ justify-content:space-around
   color: whitesmoke;
   cursor: pointer;
   border: .1em solid #ccc;
-  border-radius: 7%;
+  border-radius: 9%;
 }
 
 .container-alta .button--dropArea {
@@ -660,8 +660,9 @@ justify-content:space-around
 }
 
 .container-alta table, .container-alta th, .container-alta td {
-  border: 1px solid black;
+  border: none;
   border-collapse: collapse;
+  text-align: justify;
 }
 
 .container-alta .btn {
