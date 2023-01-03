@@ -610,7 +610,7 @@ justify-content:space-around
   background-color: dodgerblue;
   color: whitesmoke;
   cursor: pointer;
-  border-radius: 1px solid #ccc;
+  border-radius: 1px solid;
   /*         &:hover{
             background-color: green;    
         } */
@@ -674,25 +674,25 @@ justify-content:space-around
 }
 
 @media (max-width: 768px) {
-  .container-alta #listado-productos th {
-    font-size: .5rem;
-    padding: 1px;
-  }
-  .container-alta #listado-productos td {
+  .container-alta #listado-productos th, .container-alta #listado-productos td {
     overflow: hidden;
     font-size: .7rem;
     text-align: center;
     text-overflow: ellipsis;
+  }
+  .container-alta #listado-productos th {
+    font-size: .7rem;
+    color: whitesmoke;
+    background-color: black;
   }
   .container-alta #listado-productos td button {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     font-size: .9em;
-    /* margin-bottom: 3px;
-                            margin-top: 3px; */
   }
   .container-alta #listado-productos table {
+    border: .7em solid white;
     overflow: hidden;
     table-layout: fixed;
     border-collapse: collapse;

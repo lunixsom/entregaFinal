@@ -41,7 +41,7 @@
         background-color:  dodgerblue;
         color: whitesmoke;
         cursor: pointer;
-        border-radius: 1px solid #ccc;
+        border-radius: 1px solid;
        
 /*         &:hover{
             background-color: green;    
@@ -109,29 +109,28 @@
 
         @media (max-width: 768px){
             
-            th {
-                font-size: .5rem;
-                padding: 1px;
-            }
-
-            td {
+            th, td {
                 overflow: hidden;
                 font-size: .7rem;
                 text-align: center;
                 text-overflow: ellipsis;
             }
 
+            th {
+                font-size: .7rem;
+                color: whitesmoke;
+                background-color: black;
+                //padding: 1px;
+            }
+
             td button {
                             width:fit-content;
-                            font-size: .9em;
-                            //padding: .4em;
-                            //margin: .1em;
-                            /* margin-bottom: 3px;
-                            margin-top: 3px; */   
+                            font-size: .9em;  
                         } 
 
 
             table {
+                border: .7em solid white;
                 overflow: hidden;
                 table-layout: fixed;
                 border-collapse: collapse;
