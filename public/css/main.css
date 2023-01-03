@@ -612,9 +612,6 @@ justify-content:space-around
   cursor: pointer;
   border: .1em solid #ccc;
   border-radius: 7%;
-  /*         &--borrar:hover{
-            background-color: rgb(241, 113, 113);
-        } */
 }
 
 .container-alta .button--dropArea {
@@ -674,29 +671,30 @@ justify-content:space-around
 }
 
 .container-alta #listado-productos {
+  margin-top: 2em;
   width: auto;
 }
 
 @media (max-width: 768px) {
-  .container-alta #listado-productos th, .container-alta #listado-productos td {
+  .container-alta th, .container-alta td {
     overflow: hidden;
     font-size: .7rem;
     text-align: center;
     text-overflow: ellipsis;
   }
-  .container-alta #listado-productos th {
+  .container-alta th {
     font-size: .7rem;
     color: whitesmoke;
     background-color: black;
   }
-  .container-alta #listado-productos td button {
+  .container-alta td button {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     font-size: .9em;
     padding: 1.2em;
   }
-  .container-alta #listado-productos table {
+  .container-alta table {
     overflow: hidden;
     table-layout: fixed;
     border-collapse: collapse;
@@ -704,10 +702,10 @@ justify-content:space-around
     margin-bottom: 15px;
     width: 100%;
   }
-  .container-alta #listado-productos table, .container-alta #listado-productos td {
+  .container-alta table, .container-alta td {
     border: none;
   }
-  .container-alta #listado-productos .btn {
+  .container-alta .btn {
     height: 4em;
     border-radius: 25%;
   }

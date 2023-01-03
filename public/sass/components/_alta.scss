@@ -61,10 +61,6 @@
             background-image: url(../../img/icons/trash.svg);
         }
 
-/*         &--borrar:hover{
-            background-color: rgb(241, 113, 113);
-        } */
-
         &:hover{
             filter: opacity(60%);
         }
@@ -105,11 +101,13 @@
         background-position: center;
     }
 
+    #listado-productos{
+        margin-top: 2em;
+        width: auto;
+    }
+
 /* BREAKPOINT 768 - BEGIN */
     
-    #listado-productos{
-        width: auto;
-
         @media (max-width: 768px){
             
             th, td {
@@ -151,7 +149,7 @@
                 border-radius: 25%;
                 }
         }
-    }
+    
 
 /* BREAKPOINT 768 - END*/
 
