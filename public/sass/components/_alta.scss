@@ -130,13 +130,16 @@
 
 
             table {
-                border: .7em solid white;
                 overflow: hidden;
                 table-layout: fixed;
                 border-collapse: collapse;
                 margin: 0.5px;
                 margin-bottom: 15px;
                 width: 100%;
+            }
+
+            table, td{
+                border: .7em solid white;
             }
         }
     }

@@ -692,13 +692,15 @@ justify-content:space-around
     font-size: .9em;
   }
   .container-alta #listado-productos table {
-    border: .7em solid white;
     overflow: hidden;
     table-layout: fixed;
     border-collapse: collapse;
     margin: 0.5px;
     margin-bottom: 15px;
     width: 100%;
+  }
+  .container-alta #listado-productos table, .container-alta #listado-productos td {
+    border: .7em solid white;
   }
 }
 
