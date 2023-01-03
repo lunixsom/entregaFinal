@@ -603,7 +603,6 @@ justify-content:space-around
 }
 
 .container-alta .button {
-  z-index: -1;
   display: block;
   margin: 1em auto;
   padding: 1em 2em;
@@ -636,6 +635,7 @@ justify-content:space-around
 }
 
 .container-alta .button:disabled {
+  z-index: -1;
   -webkit-filter: opacity(30%);
           filter: opacity(30%);
 }
@@ -669,6 +669,13 @@ justify-content:space-around
   padding: 1.5em 1.5em;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.container-alta .btn:disabled {
+  position: relative;
+  z-index: -1;
+  -webkit-filter: opacity(30%);
+          filter: opacity(30%);
 }
 
 .container-alta #listado-productos {
