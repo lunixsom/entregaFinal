@@ -53,10 +53,12 @@
 
         &--update{
             background-image: url(../../img/icons/edit.svg);
+            border: .1em solid dodgerblue;
         }
         
         &--borrar{
             background-color: rgba(255, 0, 0, 0.82);
+            border: .1em solid rgba(255, 0, 0, 0.82);
             background-image: url(../../img/icons/trash.svg);
         }
 
