@@ -1,47 +1,58 @@
-   
-<div class="contenedor-img" id="contacto-img">
-    <div class="contenedor-img__titulo">Contactanos</div>
-</div>
-    
-    <form id="contact" action="" method="POST">
-        <label for="contactName">Ingrese su Nombre Completo</label>
-        <input  
-            id="contactName" 
-            name="contactName" 
-            type="text"
-            maxlength="50" 
-            pattern="[a-z A-Z]{3,50}" 
-            placeholder="Nombre (*): Emanuel Some" 
-            required/>
+<h1 class="titulo">Contactanos</h1>
 
-        <label for="contactEmail">Ingrese su Correo Electronico</label>
-        <input  
-            id="contactEmail" 
-            name="contactEmail" 
-            type="email"
-            minlength="8"
-            placeholder="Correo(*): emanuelsome@hotmail.com"  
-            required/>
-        
-        <label for="contactPhone">Ingrese su Numero de Telefono</label>
-        <input 
-            id="contactPhone" 
-            name="contactPhone" 
-            type="tel"
-            pattern="[0-9]{6.20} || [\()]\d{2,6}[\)]\d{3,6}[\-]\d{3,6}" 
-            placeholder="Telefono(*): (5411)3557-4888" 
-            required/>
-       
-        <label for="contactConsult">"Ingrese su Consulta"</label>
-        <textarea 
-            name="contactConsult" 
-            id="contactConsult" 
-            minlength="10" 
-            maxlength="200" 
-            placeholder="Consulta (*): Buenos dias, necesito un presupuesto"
-            cols="25"  
-            rows="10"  
-            required></textarea>
-        <button class="btn">Enviar</button>
-    </form>
-    
+<div class="contacto">
+  <div class="contacto--mapa">
+    <iframe
+      src="https://maps.google.com/maps?q=palmar%207136%20&t=&z=13&ie=UTF8&iwloc=&output=embed"
+      frameborder="0"
+      scrolling="no"
+      marginheight="0"
+      marginwidth="0">
+    </iframe>
+  </div>
+  <form id="contact" action="" method="POST">
+    <label for="contactName">Ingrese su Nombre Completo</label>
+    <input
+      id="contactName"
+      name="contactName"
+      type="text"
+      maxlength="50"
+      pattern="[a-z A-Z]{3,50}"
+      placeholder="Nombre (*): Juan Perez"
+      required
+    />
+
+    <label for="contactEmail">Ingrese su Correo Electronico</label>
+    <input
+      id="contactEmail"
+      name="contactEmail"
+      type="email"
+      minlength="8"
+      placeholder="Correo(*): mail@domain.com"
+      required
+    />
+
+    <label for="contactPhone">Ingrese su Numero de Telefono</label>
+    <input
+      id="contactPhone"
+      name="contactPhone"
+      type="tel"
+      pattern="[0-9]{6.20} || [\()]\d{2,6}[\)]\d{3,6}[\-]\d{3,6}"
+      placeholder="Telefono(*): (5411)1111-1111"
+      required
+    />
+
+    <label for="contactConsult">"Ingrese su Consulta"</label>
+    <textarea
+      name="contactConsult"
+      id="contactConsult"
+      minlength="10"
+      maxlength="200"
+      placeholder="Consulta (*): Buenos dias, necesito un presupuesto..."
+      cols="25"
+      rows="10"
+      required
+    ></textarea>
+    <button class="btn">Enviar</button>
+  </form>
+</div>

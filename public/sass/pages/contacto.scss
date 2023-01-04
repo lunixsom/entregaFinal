@@ -1,13 +1,40 @@
-#contacto-img{
-    background-image: url(../../img/productos/contactanos.jpg);
-    background-position: center -200px;
+  .contacto{
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    padding: .5em 10em .5em 10em;
 
-    @media (max-width: 768px){
-        &{   
-            background-position: center;
-        }
+    &--mapa{
+        display: block;
+        margin-top: .5em;
+        width: 100%;
     }
-}
+  }
+
+  iframe{
+    height: 28em;
+    width: 100%;
+  }
+
+  @media (max-width: 768px){
+    .contacto{
+      flex-direction: column;
+      padding: .2em;
+      align-items: unset;
+    }
+
+    #contact{
+        width: 100%;
+    }
+
+    .titulo{
+        position:static;
+        margin: .7em 0;
+        text-align: center;
+    }
+  }
+
+
 
 
 
