@@ -1,11 +1,11 @@
 footer{
-    border-top: .2em solid rgb(75, 75, 75);
+    border-top: .1em solid #f5d244;
     display: flex;
     justify-content: center;
     align-items: center;
     width: auto;
     height: 5em;
-    background-color: rgb(82, 82, 82);
+    background-color: rgba(124, 124, 124, 0.399);
     margin-top: 3em;
 }
 
@@ -13,7 +13,7 @@ footer{
     margin:1em .2em;
     height: 3em;
     width: 2.8em;
-    background-color: rgb(82, 82, 82);
+    //background-color:rgba(124, 124, 124, 0.399);
 }
 
 #face{

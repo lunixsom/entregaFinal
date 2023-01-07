@@ -11,7 +11,7 @@
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: rgba(156, 156, 156, 0.701);
+  background-color: rgba(189, 189, 189, 0.774);
 }
 
 .titulo {
@@ -115,7 +115,7 @@ body {
 
 .nav-bar__nav-link:hover {
   color: black;
-  background-color: #fafa3f;
+  background-color: #ffdf61;
   font-weight: bold;
 }
 
@@ -265,7 +265,7 @@ justify-content:space-around
 }
 
 footer {
-  border-top: 0.2em solid #4b4b4b;
+  border-top: .1em solid #f5d244;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -277,7 +277,7 @@ footer {
           align-items: center;
   width: auto;
   height: 5em;
-  background-color: #525252;
+  background-color: rgba(124, 124, 124, 0.399);
   margin-top: 3em;
 }
 
@@ -285,7 +285,6 @@ footer {
   margin: 1em .2em;
   height: 3em;
   width: 2.8em;
-  background-color: #525252;
 }
 
 #face {
@@ -412,6 +411,7 @@ iframe {
   background-image: url(../../img/productos/nosotros_escalado_1.jpg);
   height: 90vh;
   opacity: .8;
+  margin-bottom: 6em;
 }
 
 @media (max-width: 768px) {
@@ -470,9 +470,15 @@ iframe {
 .contenedor-text__infoImportant {
   width: 50em;
   padding: 1em 1.5em;
-  border-radius: 6px;
-  outline: solid 2px green;
-  margin-bottom: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 3em;
+}
+
+.contenedor-text__infoImportant p {
+  margin-left: 2em;
+  padding-top: 4em;
 }
 
 @media (max-width: 768px) {
@@ -487,6 +493,7 @@ iframe {
 
 #lastText {
   background-color: #b9b9b9;
+  border: none;
 }
 
 .card {
@@ -530,9 +537,9 @@ iframe {
 }
 
 .card:hover, .card:focus {
-  border: 0.1em solid #80d600;
-  -webkit-box-shadow: 0 1px 5px #99ff00, 0 0 3px #99ff00;
-          box-shadow: 0 1px 5px #99ff00, 0 0 3px #99ff00;
+  border: .1em solid #00ec8a;
+  -webkit-box-shadow: 0 1px 5px #00ec8a, 0 0 3px #99ff00;
+          box-shadow: 0 1px 5px #00ec8a, 0 0 3px #99ff00;
   padding: .5em;
   -webkit-transform: scale(1.03) skew();
   transform: scale(1.03) skew();
@@ -730,7 +737,7 @@ iframe {
 .container-alta .button--dropArea {
   display: inline-block;
   padding: 10px;
-  background: #ccc;
+  background: #00ec8ab3;
   cursor: pointer;
 }
 
@@ -836,7 +843,7 @@ iframe {
 }
 
 .container-alta #drop-area {
-  border: 5px dashed #ccc;
+  border: .2em dashed #00ec8a;
   border-radius: 20px;
   width: 300px;
   margin: 25px 0;

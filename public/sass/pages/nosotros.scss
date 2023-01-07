@@ -2,6 +2,7 @@
     background-image: url(../../img/productos/nosotros_escalado_1.jpg);
     height:90vh;
     opacity: .8;
+    margin-bottom: 6em;
 
     @media (max-width: 768px){
        &{       
@@ -50,9 +51,13 @@
     &__infoImportant{
         width:50em;
         padding: 1em 1.5em;
-        border-radius: 6px;
-        outline: solid 2px green;
-        margin-bottom: 5em;
+        display: flex;
+        margin-bottom: 3em;
+
+    & p{
+        margin-left: 2em; 
+        padding-top: 4em;       
+    }
 
         @media (max-width: 768px){
             &{
@@ -68,4 +73,5 @@
 
 #lastText{
     background-color: #b9b9b9;
+    border: none;
 }

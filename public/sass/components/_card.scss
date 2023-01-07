@@ -14,8 +14,8 @@
     
     &:hover,
     &:focus {
-        border: .1em solid rgb(128, 214, 0);
-        box-shadow: 0 1px 5px rgba(153, 255, 0, 1), 0 0 3px rgba(153, 255, 0, 1);
+        border: .1em solid #00ec8a;
+        box-shadow: 0 1px 5px rgba(0, 236, 138, 1), 0 0 3px rgba(153, 255, 0, 1);
         padding: .5em;
         -moz-transform: scale(1.03) skew();
         -webkit-transform: scale(1.03) skew();
