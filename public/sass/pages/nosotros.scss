@@ -1,6 +1,7 @@
 #nosotros-img{
     background-image: url(../../img/productos/nosotros_escalado_1.jpg);
-    background-position: center -150px;
+    height:90vh;
+    opacity: .8;
 
     @media (max-width: 768px){
        &{       

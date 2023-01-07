@@ -42,6 +42,7 @@ body {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 @media (max-width: 768px) {
@@ -144,7 +145,7 @@ justify-content:space-around
   background-size: contain;
   background-position: center;
   position: absolute;
-  padding: 3.5em;
+  padding: 4em;
 }
 
 .search-bar__form-container {
@@ -205,7 +206,7 @@ justify-content:space-around
   background-image: url("data:image/svg+xml,%3csvg class='w-6 h-6' fill='white' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z'%3e%3c/path%3e%3c/svg%3e");
   position: absolute;
   right: 3em;
-  top: 2.5em;
+  top: 2.7em;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 3em;
           flex: 0 0 3em;
@@ -409,7 +410,8 @@ iframe {
 
 #nosotros-img {
   background-image: url(../../img/productos/nosotros_escalado_1.jpg);
-  background-position: center -150px;
+  height: 90vh;
+  opacity: .8;
 }
 
 @media (max-width: 768px) {
@@ -533,7 +535,7 @@ iframe {
 .card:hover .card__image-container,
 .card:focus .card__image-container {
   border-radius: .3em;
-  border: 0.2em solid #785aff;
+  border: .3em solid #f18380;
   /*         -webkit-clip-path: polygon(0 0, 100% 0, 100% 190px, 0 200px);
         clip-path: polygon(0 0, 100% 0, 100% 190px, 0 200px); */
 }
