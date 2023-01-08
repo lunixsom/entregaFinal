@@ -163,7 +163,7 @@ justify-content:space-around
 
 @media (max-width: 768px) {
   .search-bar__form-container {
-    padding: 1em 1.5em 3em;
+    padding: 3.5em;
   }
 }
 
