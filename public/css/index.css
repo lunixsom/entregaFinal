@@ -28,4 +28,11 @@
     gap: 2em;
   }
 }
+
+#wssp {
+  height: 3px;
+  position: fixed;
+  right: 26px;
+  bottom: 76px;
+}
 /*# sourceMappingURL=index.css.map */
