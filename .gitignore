@@ -1,3 +1,2 @@
-
-**/*.Env
+.env
 node_modules/
