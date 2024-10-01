@@ -9,6 +9,9 @@
     "mongo": "set PERSISTENCIA=MONGODB & nodemon server.js",
     "file": "set PERSISTENCIA=FILE & nodemon server.js"
   },
+  "engines": {
+    "node": ">=16"
+  },
   "keywords": [],
   "author": "ES",
   "license": "ISC",
